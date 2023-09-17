@@ -8,3 +8,20 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// function formatName(user) {
+//   return user.firstName + ' ' + user.lastName;
+// }
+
+// const user = {
+//   firstName: 'Harry',
+//   lastName: 'Pham'
+// }
+
+// const element = (
+//   <h1>Hello, {formatName(user)}</h1>
+// );
+
+// root.render(element);
