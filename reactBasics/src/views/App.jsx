@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.scss'
-import mycomponent from './example/mycomponent'
+import MyComponent from './example/MyComponent'
 
 /**
  * 2 components: class component / function component ( function, arrow)
@@ -24,7 +24,7 @@ function App() {
         </a>
       </div>
       <h1>Hello World</h1>
-      <mycomponent className="read-the-doc" />
+      <MyComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -36,7 +36,7 @@ function App() {
       <p className="read-the-docs">
         Click on the React logos to learn more
       </p>
-      <mycomponent className="read-the-doc" />
+      <MyComponent className="docsd" />
 
     </>
   )
