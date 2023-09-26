@@ -36,7 +36,7 @@ function App() {
       <p className="read-the-docs">
         Click on the React logos to learn more
       </p>
-      <MyComponent />
+
 
     </>
   )
