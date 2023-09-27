@@ -17,13 +17,18 @@ class MyComponent extends React.Component {
   }
 
   handleOnChangeName = (event) => {
-    console.log(
-      event.target.value, ' - event target: ', event.target,
-      ' - event: ', event
-    );
+    // console.log(
+    //   event.target.value, ' - event target: ', event.target,
+    //   ' - event: ', event
+    // );
     this.setState({
-      name: event.target.value,
-      channel: 'abc'
+      name: event.target.value
+    })
+  }
+
+  handleOnChangeChannel = (event) => {
+    this.setState({
+      channel: event.target.value
     })
   }
 
@@ -38,6 +43,9 @@ class MyComponent extends React.Component {
         </div>
 
         <div className="second">
+          <input type="text" value={this.state.channel}
+            onChange={(event) => this.handleOnChangeChannel(event)}
+          />
           My channel: {this.state['channel']}
         </div>
 
